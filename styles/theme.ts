@@ -66,6 +66,7 @@ const theme = extendTheme({
     Container: {
       baseStyle: {
         maxW: ['100%', '540px', '720px', '960px', '1140px'],
+        px: '8',
       },
     },
   },
