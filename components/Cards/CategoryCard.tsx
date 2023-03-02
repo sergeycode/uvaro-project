@@ -20,7 +20,7 @@ export function CategoryCard({ icon, title, text }: ICategoryCard) {
       height="100%"
     >
       <Box mx="auto" w="55px" height="55px" position="relative">
-        <Image src={icon} alt={title} fill />
+        <Image src={icon} alt={title} fill sizes="55px" />
       </Box>
       <Heading
         as="h3"

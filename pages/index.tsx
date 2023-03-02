@@ -21,7 +21,6 @@ export default function Home() {
         <title>Our Events</title>
         <meta name="description" content="Lorem ipsum" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Hero section */}
       <Hero title={hero.title} text={hero.text} image={hero.image} />
