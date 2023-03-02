@@ -16,7 +16,7 @@ export default function Hero({ title, text, image }: IHero) {
       }}
       bgRepeat="no-repeat"
       bgPosition={{ base: '50% 0', xl: 'center, calc(50% + 300px) 100%' }}
-      bgSize="cover"
+      bgSize="auto 100%"
       minH="100vh"
       // center content on large screens
       display={{ xl: 'flex' }}
