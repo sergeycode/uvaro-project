@@ -3,11 +3,8 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <div align="center">
-  <a href="https://github.com/sergeycode/project-success-calculator">
-    <img src="public/images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">Project Success Calculator</h3>
+  <h3 align="center">Uvaro Interview Project</h3>
 
   <p align="center">
     Next.js project to highlight my latest skills
@@ -30,7 +27,6 @@
     </li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -38,15 +34,11 @@
 
 ## About The Project
 
-[![Screenshot][product-screenshot]](https://sergeycode.github.io/)
-
 Included Features:
 
-- Unit/E2E tests with React Testing Library, Jest, Cypress;
-- Validation with Formik and Yup;
 - Chakra UI Components;
-- Stored Results / Form Submissions in Browser Session Storage for returning users (hidden form if submitted, restart);
-- Single/Multi answer
+- TypeScript;
+- Unit tests with React Testing Library, Jest;
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -65,7 +57,7 @@ Included Features:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/sergeycode/project-success-calculator.git
+   git clone git@github.com:sergeycode/uvaro-project.git
    ```
 2. Install NPM packages
    ```sh
@@ -79,16 +71,8 @@ Included Features:
    ```sh
    npm run test
    ```
-5. For E2E Cypress test run
-   ```sh
-   npm run e2e
-   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Deployed on
-
-[![vercel][vercel]][vercel-url]
 
 <!-- LICENSE -->
 
@@ -104,17 +88,9 @@ Distributed under the MIT License.
 
 Twitter - [@sergeycode](https://twitter.com/sergeycode)
 
-Project Link: [https://github.com/sergeycode/project-success-calculator](https://github.com/sergeycode/project-success-calculator)
+Project Link: [https://github.com/sergeycode/uvaro-project](https://github.com/sergeycode/uvaro-project)
 
 Github pages - [https://sergeycode.github.io/](https://sergeycode.github.io/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGMENTS -->
-
-## Acknowledgments
-
-- [Start Screen Image Illustration](https://www.freepik.com/free-vector/successful-business-man-holding-trophy_11879373.htm)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,7 +101,6 @@ Github pages - [https://sergeycode.github.io/](https://sergeycode.github.io/)
 [next-js-url]: https://nextjs.org/
 [typescript-url]: https://www.typescriptlang.org/
 [chakraui-url]: https://chakra-ui.com/
-[vercel-url]: https://project-success-calculator.vercel.app/
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/sergeyovcharenko
 [product-screenshot]: public/images/screenshot.jpg
