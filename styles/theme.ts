@@ -1,12 +1,12 @@
 import { extendTheme } from '@chakra-ui/react';
-import { Raleway, PT_Sans } from '@next/font/google';
+import { Raleway, Jost } from '@next/font/google';
 
-const raleway = Raleway({ subsets: ['latin'] });
-const ptSans = PT_Sans({ subsets: ['latin'], weight: '700' });
+const raleway = Raleway({ subsets: ['latin'], display: 'swap' });
+const jost = Jost({ subsets: ['latin'], display: 'swap' });
 
 const theme = extendTheme({
   fonts: {
-    heading: ptSans.style.fontFamily,
+    heading: jost.style.fontFamily,
     body: raleway.style.fontFamily,
   },
   colors: {
