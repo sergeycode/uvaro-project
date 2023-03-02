@@ -6,7 +6,10 @@ import TrendingCategories from '@/features/TrendingCategories';
 
 // data
 import { hero } from '@/data/events/hero';
-import { content, categories } from '@/data/events/trendingCategories';
+import {
+  content as trendingContent,
+  categories,
+} from '@/data/events/trendingCategories';
 
 import yellowCircle from '@/public/images/icons/yellow-circle.png';
 import greenCircle from '@/public/images/icons/green-circle-outline.png';
@@ -20,11 +23,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* Hero section */}
       <Hero title={hero.title} text={hero.text} image={hero.image} />
+      {/* Page Wrapper */}
       <PageSection>
+        {/* yellow circle */}
         <Box
           position="absolute"
-          bottom={{ base: '20%', lg: '20%' }}
+          bottom={{ base: '20%' }}
           left={{
             base: 'calc(50% - 50px)',
             lg: 'calc(50% + 350px)',
@@ -36,7 +42,22 @@ export default function Home() {
           bgSize="contain"
           zIndex={-1}
         />
-        <TrendingCategories content={content} categories={categories} />
+        {/* green outline circle */}
+        <Box
+          display={{ base: 'none', xl: 'block' }}
+          position="absolute"
+          bottom={{ xl: '-150px' }}
+          left={{
+            xl: 'calc(50% - 1000px)',
+          }}
+          w={300}
+          h={300}
+          bgImage={greenCircle.src}
+          bgSize="contain"
+          zIndex={-1}
+        />
+        {/* Trending Categories section */}
+        <TrendingCategories content={trendingContent} categories={categories} />
       </PageSection>
     </>
   );
