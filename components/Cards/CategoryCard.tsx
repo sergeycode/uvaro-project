@@ -14,7 +14,7 @@ export function CategoryCard({ icon, title, text }: ICategoryCard) {
       py="7"
       borderRadius="xl"
       border="2px solid"
-      borderColor="brand.black"
+      borderColor="text.main"
       bgColor="white"
       boxShadow="md"
       height="100%"

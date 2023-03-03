@@ -13,9 +13,13 @@ const theme = extendTheme({
     transparent: 'transparent',
     // brand colors based on design
     brand: {
-      blue: '#5990dc',
-      teal: '#41a785',
-      black: '#181819',
+      main: '#5990dc',
+    },
+    accent: {
+      main: '#41a785',
+    },
+    text: {
+      main: '#181819',
     },
     // shades with Tailwind Shades plugin where 500 is the brand color
     blue: {
@@ -55,10 +59,10 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        color: 'brand.black',
+        color: 'text.main',
       },
       p: {
-        color: 'brand.black',
+        color: 'text.main',
       },
     },
   },
