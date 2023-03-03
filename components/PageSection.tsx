@@ -9,7 +9,7 @@ export default function PageSection({
 }) {
   return (
     <Box
-      py={{ base: '16' }}
+      py={{ base: '16', lg: '24' }}
       position="relative"
       overflow="hidden"
       bgColor={bgColor}

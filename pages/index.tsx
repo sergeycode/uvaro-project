@@ -1,8 +1,13 @@
 import Head from 'next/head';
-import { Box } from '@chakra-ui/react';
 import Hero from '@/components/Hero';
 import PageSection from '@/components/PageSection';
 import TrendingCategories from '@/features/TrendingCategories';
+import {
+  YellowCircle,
+  GreenCircleOutline,
+  GreenCircle,
+  WhiteCircleOutline,
+} from '@/components/UIElements/Circles';
 import UpcomingEvents from '@/features/UpcomingEvents';
 
 // data
@@ -15,9 +20,6 @@ import {
   content as upcomingContent,
   events,
 } from '@/data/events/upcomingEvents';
-
-import yellowCircle from '@/public/images/icons/yellow-circle.png';
-import greenCircle from '@/public/images/icons/green-circle-outline.png';
 
 export default function Home() {
   return (
@@ -32,40 +34,21 @@ export default function Home() {
       {/* Page Section */}
       <PageSection>
         {/* yellow circle */}
-        <Box
-          position="absolute"
-          bottom={{ base: '20%' }}
-          left={{
-            base: 'calc(50% - 50px)',
-            lg: 'calc(50% + 350px)',
-            xl: 'calc(50% + 450px)',
-          }}
-          w={500}
-          h={500}
-          bgImage={yellowCircle.src}
-          bgSize="contain"
-          zIndex={-1}
-        />
-        {/* green outline circle */}
-        <Box
-          display={{ base: 'none', xl: 'block' }}
-          position="absolute"
-          bottom={{ xl: '-150px' }}
-          left={{
-            xl: 'calc(50% - 1000px)',
-          }}
-          w={300}
-          h={300}
-          bgImage={greenCircle.src}
-          bgSize="contain"
-          zIndex={-1}
-        />
+        <YellowCircle />
+        {/* green outline circle bottom */}
+        <GreenCircleOutline bottom="-150px" />
         {/* Trending Categories section */}
         <TrendingCategories content={trendingContent} categories={categories} />
       </PageSection>
       {/* Page Section */}
       <PageSection bgColor="bg.primary">
         {/* Upcoming Events section */}
+        {/* green outline circle top */}
+        <GreenCircleOutline top="-150px" />
+        {/* green bottom right circle */}
+        <GreenCircle />
+        {/* whtie bottom right circle */}
+        <WhiteCircleOutline />
         <UpcomingEvents content={upcomingContent} events={events} />
       </PageSection>
     </>

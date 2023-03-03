@@ -6,9 +6,9 @@ const jost = Jost({ subsets: ['latin'], display: 'swap' });
 
 const customButtonProps = {
   fontFamily: 'heading',
-  fontSize: 'md',
+  fontSize: 'sm',
   borderRadius: '0',
-  minH: '12',
+  minH: '42px',
   fontWeight: 'medium',
   textTransform: 'uppercase',
   transition: 'all .2s ease-in-out',

@@ -26,7 +26,7 @@ export default function UpcomingEvents({
       <Grid
         mt={{ base: 6, lg: 4 }}
         templateColumns={{ lg: 'repeat(3, 1fr)', '2xl': 'repeat(4, 1fr)' }}
-        gap={{ base: 10, xl: '64px 40px' }}
+        gap={{ base: 10, xl: '64px 48px' }}
       >
         {events.map((event) => (
           <GridItem key={event.id}>
