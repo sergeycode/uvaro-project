@@ -3,6 +3,7 @@ import { Box } from '@chakra-ui/react';
 import Hero from '@/components/Hero';
 import PageSection from '@/components/PageSection';
 import TrendingCategories from '@/features/TrendingCategories';
+import UpcomingEvents from '@/features/UpcomingEvents';
 
 // data
 import { hero } from '@/data/events/hero';
@@ -10,6 +11,10 @@ import {
   content as trendingContent,
   categories,
 } from '@/data/events/trendingCategories';
+import {
+  content as upcomingContent,
+  events,
+} from '@/data/events/upcomingEvents';
 
 import yellowCircle from '@/public/images/icons/yellow-circle.png';
 import greenCircle from '@/public/images/icons/green-circle-outline.png';
@@ -24,7 +29,7 @@ export default function Home() {
       </Head>
       {/* Hero section */}
       <Hero title={hero.title} text={hero.text} image={hero.image} />
-      {/* Page Wrapper */}
+      {/* Page Section */}
       <PageSection>
         {/* yellow circle */}
         <Box
@@ -57,6 +62,11 @@ export default function Home() {
         />
         {/* Trending Categories section */}
         <TrendingCategories content={trendingContent} categories={categories} />
+      </PageSection>
+      {/* Page Section */}
+      <PageSection bgColor="bg.primary">
+        {/* Upcoming Events section */}
+        <UpcomingEvents content={upcomingContent} events={events} />
       </PageSection>
     </>
   );

@@ -4,6 +4,16 @@ import { Raleway, Jost } from '@next/font/google';
 const raleway = Raleway({ subsets: ['latin'], display: 'swap' });
 const jost = Jost({ subsets: ['latin'], display: 'swap' });
 
+const customButtonProps = {
+  fontFamily: 'heading',
+  fontSize: 'md',
+  borderRadius: '0',
+  minH: '12',
+  fontWeight: 'medium',
+  textTransform: 'uppercase',
+  transition: 'all .2s ease-in-out',
+};
+
 const theme = extendTheme({
   fonts: {
     heading: jost.style.fontFamily,
@@ -11,17 +21,24 @@ const theme = extendTheme({
   },
   colors: {
     transparent: 'transparent',
-    // brand colors based on design
+    // colors based on design
     brand: {
       main: '#5990dc',
     },
     accent: {
       main: '#41a785',
     },
+    ui: {
+      primary: '#181819',
+    },
     text: {
       main: '#181819',
     },
-    // shades with Tailwind Shades plugin where 500 is the brand color
+    bg: {
+      primary: '#F1F1F1',
+      secondary: '#EFF6FF',
+    },
+    // shades with Tailwind Shades plugin where 500 is the main/primary color
     blue: {
       100: '#dee9f8',
       200: '#bdd3f1',
@@ -69,8 +86,28 @@ const theme = extendTheme({
   components: {
     Container: {
       baseStyle: {
-        maxW: ['100%', '540px', '720px', '960px', '1140px'],
-        px: '8',
+        maxW: ['100%', '540px', '720px', '960px', '1140px', '1280px'],
+        px: { base: 8, xl: 0 },
+      },
+    },
+    Button: {
+      variants: {
+        primary: {
+          ...customButtonProps,
+          bgColor: 'ui.primary',
+          color: 'white',
+          _hover: {
+            background: 'black.400',
+          },
+        },
+        secondary: {
+          ...customButtonProps,
+          color: 'white',
+          bgColor: 'brand.main',
+          _hover: {
+            background: 'blue.600',
+          },
+        },
       },
     },
   },
@@ -80,6 +117,7 @@ const theme = extendTheme({
     lg: '992px',
     xl: '1200px',
     '2xl': '1400px',
+    '3xl': '1600px',
   },
 });
 
