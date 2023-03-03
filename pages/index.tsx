@@ -29,25 +29,15 @@ export default function Home() {
         <meta name="description" content="Lorem ipsum" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      {/* Hero section */}
       <Hero title={hero.title} text={hero.text} image={hero.image} />
-      {/* Page Section */}
       <PageSection>
-        {/* yellow circle */}
         <YellowCircle />
-        {/* green outline circle bottom */}
         <GreenCircleOutline bottom="-150px" />
-        {/* Trending Categories section */}
         <TrendingCategories content={trendingContent} categories={categories} />
       </PageSection>
-      {/* Page Section */}
       <PageSection bgColor="bg.primary">
-        {/* Upcoming Events section */}
-        {/* green outline circle top */}
         <GreenCircleOutline top="-150px" />
-        {/* green bottom right circle */}
         <GreenCircle />
-        {/* whtie bottom right circle */}
         <WhiteCircleOutline />
         <UpcomingEvents content={upcomingContent} events={events} />
       </PageSection>
