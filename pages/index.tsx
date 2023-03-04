@@ -2,13 +2,15 @@ import Head from 'next/head';
 import Hero from '@/components/Hero';
 import PageSection from '@/components/PageSection';
 import TrendingCategories from '@/features/TrendingCategories';
-import {
-  YellowCircle,
-  GreenCircleOutline,
-  GreenCircle,
-  WhiteCircleOutline,
-} from '@/components/UIElements/Circles';
 import UpcomingEvents from '@/features/UpcomingEvents';
+import Testimonial from '@/components/Testimonial';
+
+// moved to UI folder to clean up the page
+import {
+  TrendingCategoriesCircles,
+  UpcomingEventsCircles,
+  TestimonialCircles,
+} from '@/components/UI/EventsCircles';
 
 // data
 import { hero } from '@/data/events/hero';
@@ -20,6 +22,7 @@ import {
   content as upcomingContent,
   events,
 } from '@/data/events/upcomingEvents';
+import { testimonial } from '@/data/events/testimonial';
 
 export default function Home() {
   return (
@@ -31,15 +34,16 @@ export default function Home() {
       </Head>
       <Hero title={hero.title} text={hero.text} image={hero.image} />
       <PageSection>
-        <YellowCircle />
-        <GreenCircleOutline bottom="-150px" />
+        <TrendingCategoriesCircles />
         <TrendingCategories content={trendingContent} categories={categories} />
       </PageSection>
       <PageSection bgColor="bg.primary">
-        <GreenCircleOutline top="-150px" />
-        <GreenCircle />
-        <WhiteCircleOutline />
+        <UpcomingEventsCircles />
         <UpcomingEvents content={upcomingContent} events={events} />
+      </PageSection>
+      <PageSection bgColor="bg.secondary">
+        <TestimonialCircles />
+        <Testimonial {...testimonial} />
       </PageSection>
     </>
   );

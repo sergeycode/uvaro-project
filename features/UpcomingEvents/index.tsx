@@ -1,4 +1,4 @@
-import { Heading, Grid, GridItem } from '@chakra-ui/react';
+import { Box, Heading, Grid, GridItem } from '@chakra-ui/react';
 
 import { IEventCard, EventCard } from '@/components/Cards/EventCard';
 
@@ -14,7 +14,7 @@ export default function UpcomingEvents({
   events: IEventCard[];
 }) {
   return (
-    <>
+    <Box position="relative" zIndex={2}>
       <Heading
         as="h2"
         textTransform="uppercase"
@@ -34,6 +34,6 @@ export default function UpcomingEvents({
           </GridItem>
         ))}
       </Grid>
-    </>
+    </Box>
   );
 }

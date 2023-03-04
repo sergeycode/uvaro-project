@@ -15,7 +15,7 @@ export default function TrendingCategories({
   categories: ICategoryCard[];
 }) {
   return (
-    <Box textAlign={{ base: 'center' }}>
+    <Box textAlign={{ base: 'center' }} position="relative" zIndex={2}>
       <Heading
         as="h2"
         textTransform="uppercase"

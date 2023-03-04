@@ -32,7 +32,8 @@ const theme = extendTheme({
       primary: '#181819',
     },
     text: {
-      main: '#181819',
+      primary: '#181819',
+      secondary: '#41a785',
     },
     bg: {
       primary: '#F1F1F1',
@@ -76,10 +77,10 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        color: 'text.main',
+        color: 'text.primary',
       },
       p: {
-        color: 'text.main',
+        color: 'text.primary',
       },
     },
   },
