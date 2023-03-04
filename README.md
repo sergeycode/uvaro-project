@@ -7,7 +7,10 @@
   <h3 align="center">Uvaro Interview Project</h3>
 
   <p align="center">
-    Next.js project to highlight my latest skills
+    Candidate Project for Uvaro for Sr. Front-End Software Developer Position
+  </p>
+  <p align="center">
+    Completed by Serhii Ovcharenko on 2023-03-03
   </p>
 
 </div>
@@ -85,6 +88,10 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Deployed on
+
+[![vercel][vercel]][vercel-url]
+
 <!-- LICENSE -->
 
 ## License
@@ -120,3 +127,4 @@ Github pages - [https://sergeycode.github.io/](https://sergeycode.github.io/)
 [chakraui]: https://img.shields.io/badge/Chakra-20232A?style=for-the-badge&logo=chakraui&logoColor=319795
 [typescript]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
 [vercel]: https://img.shields.io/badge/vercel-20232A?style=for-the-badge&logo=vercel
+[vercel-url]: https://uvaro-project.vercel.app/
