@@ -33,20 +33,20 @@ export default function Hero({ title, text, image }: IHero) {
       >
         <Box
           // match to dark area
-          pt={{ base: '10vh', md: '20vh', xl: '0' }}
-          maxW="650px"
+          pt={{ base: '12vh', md: '20vh', xl: '0' }}
+          maxW="700px"
         >
           <Box>
             <Heading
               as="h1"
               color="white"
               textTransform="uppercase"
-              fontSize={{ base: '5xl' }}
+              fontSize={{ base: '4xl', lg: '6xl' }}
               mb={{ base: '4rem', md: '2rem' }}
             >
               {title}
             </Heading>
-            <Text color="white" fontSize={{ base: 'lg' }}>
+            <Text color="white" fontSize={{ base: 'lg', lg: 'xl' }}>
               {text}
             </Text>
           </Box>

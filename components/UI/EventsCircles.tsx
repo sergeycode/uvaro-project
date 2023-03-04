@@ -10,7 +10,7 @@ export const TrendingCategoriesCircles = () => (
       borderRadius="50%"
       bgColor="#F4C734"
       zIndex={1}
-      bottom={{ base: '20%' }}
+      bottom={{ base: '12%', lg: '20%' }}
       left={{
         base: 'calc(50% - 50px)',
         lg: 'calc(50% + 350px)',
