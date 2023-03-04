@@ -53,6 +53,23 @@
 14. The Testimonial section was made as a component instead of a feature. I decided to make the circle images into components for site performance.
 15. Now it was time to add tests to showcase my skills. I added couple of simple tests to check if they are rendering and if the data is being passed correctly.
 16. The last part was to add Readme file and zip everything up. But I also decided to deploy the project to Vercel to showcase my skills in CI/CD. Also it would be easier for show this project to the team without deploying it locally.
+17. Deployed and tested on mobile and desktop.
+
+Lighthouse score:
+
+Mobile:
+
+- Performance: 93
+- Accessibility: 97
+- Best Practices: 100
+- SEO: 92
+
+Desktop:
+
+- Performance: 100
+- Accessibility: 97
+- Best Practices: 100
+- SEO: 90
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
