@@ -45,7 +45,7 @@ export const events: IEventCard[] = [
     image: eventImage04.src,
     description:
       "Landing your dream job takes more than just a killer resume and cover letter. In this webinar, our speaker, Tom Lee, will share his insider tips and tricks for standing out in a crowded job market. From networking to acing the interview to negotiating your salary, Tom has seen it all and will share his insights on what it takes to land the job you've always wanted. Don't miss this opportunity to learn from a seasoned talent acquisition manager.",
-    speakerName: 'Tom Lee, Talent Acquisition Manager',
+    speakerName: 'Tom Lee, Talent Manager',
     dateTime: 'April 12th, 2023 at 3:00 PM PST',
   },
   {
@@ -63,7 +63,7 @@ export const events: IEventCard[] = [
     image: eventImage06.src,
     description:
       'Join us as we explore the unique challenges and rewards of working in the non-profit sector. Learn from experienced professionals who have made a difference in their communities.',
-    speakerName: 'Maria Rodriguez, Executive Director',
+    speakerName: 'Maria Rodriguez, Director',
     dateTime: 'May 15th, 2023 at 2:00 PM PST',
   },
 ];
